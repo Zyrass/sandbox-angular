@@ -1,6 +1,6 @@
 # CocktailsP1
 
-![demo](https://github.com/alain-guillon-it/sandbox-angular/blob/screenshots/screen.jpg)
+![demo](https://github.com/alain-guillon-it/sandbox-angular/tree/main/screenshots/screen.jpg)
 C'est le rendu actuel après seulement 3 chapitres vu sur la plateforme dyma.fr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
