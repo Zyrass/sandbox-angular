@@ -1,1 +1,158 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Lora", serif;
+  --font-family-title: "Cinzel", serif;
+  --primary: #706fd3;
+  --secondary: #474787;
+  --accent: #d3706f;
+  --lightgray: #d1ccc0;
+  --text-regular: #333333;
+  --white: #f7f1e3;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+}
+
+// Utils
+.d-flex {
+  display: flex;
+}
+.flex- {
+  &fill {
+    flex: 1 1 auto;
+  }
+  &50 {
+    flex: 1 1 50%;
+  }
+  &row {
+    flex-direction: row;
+  }
+  &column {
+    flex-direction: column;
+  }
+  &justify- {
+    &center {
+      justify-content: center;
+    }
+    &between {
+      justify-content: space-between;
+    }
+    &around {
+      justify-content: space-around;
+    }
+  }
+  &align- {
+    &center {
+      align-items: center;
+    }
+    &start {
+      align-items: flex-start;
+    }
+    &end {
+      align-items: flex-end;
+    }
+  }
+}
+
+.p {
+  &-10 {
+    padding: 10px;
+  }
+  &-20 {
+    padding: 20px;
+  }
+  &y {
+    &-50 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.m {
+  &-10 {
+    margin: 10px;
+  }
+  &-20 {
+    margin: 20px;
+  }
+  &b {
+    &-20 {
+      margin-bottom: 20px;
+    }
+  }
+  &r {
+    &-20 {
+      margin-right: 20px;
+    }
+  }
+  &l {
+    &-20 {
+      margin-left: 20px;
+    }
+  }
+}
+
+// debug
+.d {
+  &1 {
+    border: 1px solid red;
+  }
+  &2 {
+    border: 1px solid teal;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  &-primary {
+    transition: background-color 0.4s;
+    background-color: var(--primary);
+    &:hover {
+      background-color: var(--secondary);
+    }
+    &:focus {
+      background-color: var(--accent);
+    }
+  }
+}

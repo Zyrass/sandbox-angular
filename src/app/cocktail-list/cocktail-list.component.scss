@@ -1,0 +1,22 @@
+ul {
+  margin: 10px 0 20px;
+  li {
+    border: 1px solid var(--lightgray);
+    border-top: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    &:hover {
+      background-color: var(--primary);
+    }
+    &:first-child {
+      border-top: 1px solid var(--lightgray);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
